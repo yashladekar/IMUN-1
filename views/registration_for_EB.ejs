@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <form action="/registration_for_EB" method="post">
+        <div class="forms">
+            <h1 style="font-size: 2rem;margin-bottom: 2rem;">D. Y. Patil MUN Registeration For Executive Board</h1>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Personal Information
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="delegate">
+                                <div class="full-name">
+                                    <input type="text" name="fname" id="fname" placeholder="First Name"
+                                        class="name inputs">
+                                    <input type="text" name="lname" id="lname" placeholder="Last Name"
+                                        class="name inputs">
+                                </div>
+
+                                <input type="email" name="email" id="email" placeholder="Email" class="inputs">
+                                <br>
+                                <input type="number" name="phone" id="phone" placeholder="Phone No" class="inputs">
+                                <div class="date-of-birth">
+                                    <label for="dob">Date Of Birth: </label>
+                                    <input type="date" name="dob" id="dob">
+                                </div>
+                                <div class="gender">
+                                    <fieldset>
+                                        <div class="radio">
+                                            <input type="radio" id="male" name="gender_eb" value="male">
+                                            <label for="male">Male</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input type="radio" id="female" name="gender_eb" value="female">
+                                            <label for="female">Female</label>
+                                        </div>
+
+                                        <div class="radio">
+                                            <input type="radio" id="other" name="gender_eb" value="other">
+                                            <label for="other">Other</label>
+                                            <input type="text" class="form-control" id="other-gender" name="gender_eb"
+                                                style="display: none">
+                                            <script>document.getElementById('other').onchange = function () {
+                                                        document.getElementById('other-gender').style.display = "block";
+                                                    };</script>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <input type="text" name="institution" id="institution" placeholder="Institution"
+                                    class="inputs">
+                                <input type="text" name="city_of_residence" id="city_of_residence"
+                                    placeholder="City Of Resident" class="inputs">
+                                <input type="text" name="nationality" id="nationality" placeholder="Nationality"
+                                    class="inputs">
+                                <div class="diet">
+                                    <legend>Dietary Restrictions</legend>
+                                    <fieldset>
+                                        <div class="radio">
+                                            <input type="radio" id="veg" name="diet" value="veg">
+                                            <label for="veg">Vegetarian</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="nonveg" name="diet" value="nonveg">
+                                            <label for="nonveg">Non Vegetarian</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="accomodation">
+                                    <legend>Do you require accomodation?</legend>
+                                    <fieldset>
+                                        <div class="radio">
+                                            <input type="radio" id="yes" name="accomodation" value="yes">
+                                            <label for="yes">Yes</label>
+                                        </div class="radio">
+                                        <div class="radio">
+                                            <input type="radio" id="no" name="accomodation" value="no">
+                                            <label for="no">No</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Past MUN Experience
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="past-mun">
+                                <div class="past-MUN-as-del">
+                                    <label for="past-del" class="form-label">Previous MUN Experience as a Delegate (Sr.
+                                        No. / Conference Name / Year
+                                        / Committee / Country)</label><br>
+                                    <textarea class="form-control" name="past_dele" id="past-del" rows="2"></textarea>
+                                </div>
+                                <div class="past-MUN-as-exec">
+                                    <label for="past-exec" class="form-label">Previous MUN Experience as The Executive
+                                        Board (Sr. No. /
+                                        Conference Name / Year / Committee / Country)</label><br>
+                                    <textarea class="form-control" name="past_exec" id="past-exec" rows="2"></textarea>
+                                </div>
+                                <div class="past-public-speaker">
+                                    <label for="past-ps" class="form-label">Public Speaking Experience apart from a
+                                        Model United Nations
+                                        Conference</label><br>
+                                    <textarea class="form-control" name="past_ps" id="past-ps" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Committee Preferences
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body" id="table">
+                        <div class="comm-table">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>DISEC</th>
+                                        <th>EFC</th>
+                                        <th>SOCHUM</th>
+                                        <th>SPECPOL</th>
+                                        <th>ESC</th>
+                                        <th>UNGA</th>
+                                        <th>SC/UNSC</th>
+                                        <th>UNESCO</th>
+                                        <th>UNCTAD</th>
+                                        <th>G20</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-heading">Committee <br>Preference 1</td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="DISEC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="EFC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="SOCHUM"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="SPECPOL"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="ESC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="UNGA"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="SC/UNSC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="UNESCO"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="UNCTAD"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="G20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Committee <br>Preference 2</td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="DISEC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="EFC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="SOCHUM"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="SPECPOL"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="ESC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="UNGA"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="SC/UNSC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="UNESCO"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="UNCTAD"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="G20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Committee <br>Preference 3</td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="DISEC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="EFC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="SOCHUM"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="SPECPOL"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="ESC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="UNGA"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="SC/UNSC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="UNESCO"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="UNCTAD"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="G20"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="country-preference">
+                            <div class="country-prefer1">
+                                <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 1 (Maximum 3)</label><br>
+                                <input type="text" name="country_preference1" id="country-preference1"  class="inputs coun-prefer" placeholder="Country of Preference">
+                            </div>
+                            <div class="country-prefer2">
+                                <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 2 (Maximum 3)</label><br>
+                                <input type="text" name="country_preference2" id="country-preference2" class="inputs coun-prefer" placeholder="Country of Preference">
+                            </div>
+                            <div class="country-prefer3">
+                                <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 3 (Maximum 3)</label><br>
+                                <input type="text" name="country_preference3" id="country-preference3" class="inputs coun-prefer" placeholder="Country of Preference">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Any suggestion
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <div class="comment">
+                            <label for="suggestion" class="form-label">Anything else that you would like to add
+                                ?</label><br>
+                            <textarea class="form-control" name="suggestion" id="suggestion" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+    </form>
+</body>
+
+</html>

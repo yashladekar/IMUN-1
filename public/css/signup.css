@@ -1,0 +1,162 @@
+html{
+    width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width:750px){
+    form{
+        min-width: 375px;
+        padding: 30px;
+    }
+    #fname, #lname, #cod-fname, #cod-lname{
+        margin: 0px;
+    }
+   
+}
+
+@media (min-width:751px){
+    form{
+        width: 900px;
+        padding: 50px;
+    }
+    #fname, #lname, #cod-fname, #cod-lname{
+        margin: 15px;
+    }
+
+}
+
+@media (max-width:900px){
+    .comm-table{
+        overflow: scroll;
+    }
+   
+}
+
+@media (min-width:901px){
+    .comm-table{
+        overflow: hidden;
+    }
+}
+
+.coun-prefer{
+    max-width: 450px;
+    width: 90%;
+}
+
+table{
+    font-size: 15px;
+    text-align: center;
+}
+
+body{
+    background:linear-gradient(rgb(0 74 132 / 70%), rgba(112, 255, 243, 0.7)), url(../logo/mun-logo-4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.inputs, .date-of-birth, .cod-date-of-birth, .diet, .cod-diet, .accomodation, .cod-accomodation,
+.past-MUN-as-del, .past-MUN-as-exec, .past-public-speaker, .comment{
+    margin: 15px;
+}
+.inputs{
+    height: 35px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.names{
+    display: flex;
+}
+
+
+#fname, #lname, #cod-fname, #cod-lname{
+    max-width: 140px;
+    width: 100%;
+    margin: 15px;
+}
+
+#email, #cod-email{
+    width: 200px;
+}
+
+.date-of-birth, .cod-date-of-birth{
+    margin-left: 18px;
+}
+
+#dob, #cod-dob{
+    height: 25px;
+    width: 125px;
+    border-radius: 7px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+.gender{
+    margin: 15px;
+}
+
+
+
+fieldset{
+    display: flex;
+    border: none;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.check-co-del{
+    display: flex;
+    align-items: center;
+}
+
+input:focus{
+    box-shadow: 0px 0px 10px 4px #00316a66;
+    outline: none;
+}
+
+input[type=checkbox]:focus{
+    box-shadow: 0px 0px 0px;
+    outline: none;
+}
+
+.btn{
+    width: 150px;
+    align-self: end;
+    margin: 20px;
+}
