@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #ffffff;
+    background-image: url("../logo/foggy-birds.png");
+}
+
+.front-page{
+    height: 100vh;
+    width: 100%;
+}
+.bg-overlay {
+    background: linear-gradient(rgb(0 0 0 / 78%), rgb(0 0 0 / 66%)), url(../logo/world_map.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    color: #fff;
+    height: 100%;
+}
+
+.head-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+}
+    
+.committees-sec{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left-comm{
+    align-self: flex-end;
+}
+
+.committees{
+    padding-top: 100px;
+}
+
+.container{
+    display: grid ;
+}      
+
+
+.text-container{
+    background: white;
+}
+
+.logo-box{
+    position: relative;
+    height: 8em;
+    border-radius: 50%;
+    background: white;
+}
+
+
+.UNlogo{
+    width: 200px;
+    position: relative;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box{
+    padding: 20px;
+}
+
+.committees-sec .committees .container .text-container h2{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.committees-sec .committees .container .text-container p{
+    margin-top: 20px;
+    line-height: 1.35;
+    font-size: 16px;
+}
+
+/*  background of each committees */
+
+
+#disec-bg{
+    background: url(../logo/disarmament.jpg);
+    background-size: cover;
+}
+
+#ecofin-bg{
+    background: url(../logo/globalization.jpg);
+    background-size: cover;
+}
+
+#sochum-bg{
+    background: url(../logo/SOCHUM.jpg);
+    background-size: cover;
+}
+
+#specpol-bg{
+    background: url(../logo/DECOLONIZATION.jpg);
+    background-size: cover;
+}
+
+#ecosoc-bg{
+        background: url(../logo/sustainable.png), #bfe9f7b5;
+    background-size: cover;
+}
+
+#unga-bg{
+    background: url(../logo/general_assembly.jpg);
+    background-size: cover;
+}
+
+#unsc-bg{
+    background: url(../logo/security.jpg);
+    background-size: cover;
+}
+
+#unesco-bg{
+    background: url(../logo/education.jpeg);
+    background-size: cover;
+}
+
+#unctad-bg{
+    background: url(../logo/trades.jpg);
+    background-size: cover;
+}
+
+#g20-bg{
+    background: url(../logo/g20-indonesia.jpg);
+    background-size: cover;
+}
+
+/* fade in animation */
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.qoute{
+    position: relative;
+    top: 50%;
+    border: solid 10px;
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+
+/* for desktop */
+
+@media (min-width:901px){
+
+    body{
+        min-width: 1200px;
+    }
+
+    .committees-sec{
+        max-width: 1000px;
+        display: flex;
+        width: 100%;
+    }
+
+    .bg-overlay .head-box h1{
+        font-size: 4rem;
+    }
+
+    
+
+    .committees{
+        padding-bottom: 50px;
+        width: 900px;
+    }
+
+    .container{
+        width: 900px;
+        height: 480px;
+    }
+
+    .text-container{
+        width: 400px;
+        max-height: 430px;
+        margin: 50px 50px 0;
+    }
+
+    .logo-box{
+        top: -22%;
+    }
+
+    .text-container{
+        grid-row: 2;
+    }
+
+    .left-logo{
+        grid-row: 1 / 3;
+        grid-column: 2;
+        left: 66%;
+      }
+
+    .right-logo{
+        grid-row: 1 / 3;
+        grid-column: 1;
+        left: -45%;
+    }
+
+    .UNlogo{
+        width:200px;
+    }
+
+    .logo-box{
+        width: 220px;
+        height: 220px;
+    }
+
+    .qoute{
+        left: 55%;
+        padding: 25px;
+    }
+    
+}
+
+
+/* for smartphone */
+
+@media (max-width:901px){
+
+    .UNlogo{
+        width:100px;
+    }
+   
+    .logo-box{
+        width: 120px;
+        height: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        box-shadow: 0px -5px 20px 0px lightgrey;
+    }
+
+    .bg-overlay .head-box h1{
+        font-size: 2rem;
+    }
+
+    
+    
+}

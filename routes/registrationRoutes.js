@@ -3,10 +3,10 @@ const router = express.Router();
 const ejs = require('ejs');
 const { google } = require('googleapis');
 const { assuredworkloads } = require("googleapis/build/src/apis/assuredworkloads")
+const nodemailer = require("nodemailer");
 router.get('/', (req, res) => {
     res.render('registration')
 })
-
 
 router.post('/', async (req, res) => {
 
@@ -51,6 +51,28 @@ router.post('/', async (req, res) => {
             ]
         }
     })
+    const transporter = nodemailer.createTransport({
+        service: "Gmail",
+        auth: {
+            user: process.env.EMAIL_USERNAME,
+            pass: process.env.PASSWORD
+        }
+    });
+
+
+    const mailConfigurations = {
+        from: 'dyppunemun@gmail.com',
+        to: email,
+        subject: 'confirmation of registration ',
+        text: 'thank you for the registration ' + fname + ' ' + lname
+            + ' this is your unique id ' + uniqueId + '.'
+    };
+
+    transporter.sendMail(mailConfigurations, function (error, info) {
+        if (error) throw Error(error);
+        console.log('Email Sent Successfully');
+        console.log(info);
+    });
 
     res.redirect("thankyou")
 })

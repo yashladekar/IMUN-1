@@ -1,0 +1,571 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+.front-page, .MUN, .mission-sec{
+    height: 100%;
+}
+.bg-overlay, .missions-sec {
+    background-position: top;
+    color: #fff;
+    height: 165%;
+}
+
+.bg-overlay{
+    background: linear-gradient(rgb(0 0 0 / 78%), rgb(0 0 0 / 66%)), url(../logo/iStock-184327474.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.missions-sec{
+    background: url(../logo/un-exordium-prep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container-fluid .DYP{
+    max-width: 650px;
+    background: #EEEEEE;
+    color: #222831;
+    position: relative;
+    padding: 40px;
+}
+
+.container-fluid .DYP {
+  transform: perspective(1500px) rotateY(15deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+  background: #EEEEEE;
+}
+
+.container-fluid .DYP:hover {
+    transform: perspective(3000px) rotateY(20deg);
+}
+
+#MUN-heading{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#MUN-heading::after{
+    content: '';
+    position: absolute;
+    width: 7rem;
+    background-color: #00ADB5;
+    height: 3px;
+    left: 4%;
+
+}
+
+
+.MUN .MUN-text{
+    max-width: 600px;
+    z-index: 3;
+    box-shadow: -20px 4px 20px 0px lightgrey;
+}
+
+.container{
+   color: #222831;
+    background: #EEEEEE;
+    width: 100%;
+    padding: 20px;
+}
+
+.MUN-img{
+    z-index: 1;
+    position: relative;
+    max-width: 700px;
+}
+
+
+
+.missions-sec .mission-text{
+    max-width: 600px;
+    padding: 40px;
+    box-shadow: 0px 0px 20px 0px #3d3d3d;;
+}
+
+.mission-text{
+    position: relative;
+    
+}
+
+.preparation-text ,.position-para, .position-points{
+    box-shadow: 0px 0px 20px 0px #3d3d3d;
+}
+
+.position-paper{
+    background: #EEEEEE;
+}
+
+.prepare-sec{
+    height: 100%;
+    background: #1B262C;
+    color: #BBE1FA;
+}
+
+.prepare-sec .prepare-container{
+    position: relative;
+    top: 70%;
+}
+
+.prepare-sec .preparation-text{
+    max-width: 600px;
+    padding: 35px;
+}
+
+.position-para{
+    position: relative;
+    background: #1B262C;
+    color: #BBE1FA;
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.position-points{
+    background: #1B262C;
+    
+    color: #BBE1FA;
+    padding: 25px;
+    max-width: 770px;
+    position: relative;
+    
+    
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.position-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pos-point{
+    padding: 10px;
+}
+
+h4{
+    margin-left: 10px;
+}
+
+.pos-para{ 
+    margin-left: 50px;
+}
+
+.position-para h3{
+    margin-bottom: 25px;
+}
+
+.openSpeech-and-Research-sec{
+    height: 150%;
+    background: #1B262C;
+}
+
+.openSpeech-and-Research-sec .opening,.openSpeech-and-Research-sec .research{
+    max-width: 700px;
+    background: #EEEEEE;
+    padding: 35px;
+    border-radius: 10px;
+    color: #393E46;
+}
+
+h1, h2, h3, h4{
+    color: #00ADB5;
+}
+
+.opening{
+    position: relative;
+    top: 15%;
+}
+
+.research{
+    position: relative;
+    top: 27%;
+}
+
+.opening h3, .research h3{
+    margin-bottom: 25px;
+}
+
+.resolution-and-profile-sec{
+    height: 160%;
+    background: #EEEEEE;
+}
+
+.resolution-and-profile-sec .container{
+    max-width: 500px;
+    padding: 35px;
+}
+
+
+.image-exo, .image-exo2{
+    width: fit-content;
+}
+
+#MUN-image{
+    max-width: 700px;
+}
+
+@media (min-width:1080px){
+
+    .container-fluid .DYP{
+        top: 30%;
+        left: 20%;
+    }
+
+    #MUN-image{
+        max-width:700px;
+    }
+
+    .MUN .MUN-text{
+        position: relative;
+        top: 31%;
+        left: -16%;
+    }
+
+    .MUN-img{
+        top: -50%;
+        left: 38%;
+    }
+
+    .mission-text{
+        position: relative;
+        left: 10%;
+        top: 70%;
+    }
+
+    .bg-overlay, .missions-sec {
+        height: 100%;
+    }
+
+    .prepare-sec .prepare-container{
+        left: -12%;
+    }
+
+    .position-para{
+        left: 45%;    
+        
+        top: 24%;
+    }
+
+    .position-points{
+        left: 15%;
+        top: 25%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .position-paper{
+        top: 34%;
+        height: 167%;
+    }
+
+    .opening{
+        left: -11%;
+    }
+
+    .research{
+        left: 15%;
+    }
+
+    .resolution-and-profile-sec{
+        height: 120%;
+    }
+
+    .resolution-and-profile-sec .resolution{
+        position: relative;
+        top: 4%;
+        left: -15%;
+    }
+
+    .resolution-and-profile-sec .country-profile{
+        position: relative;
+        left: 15%;
+        top: -40%;
+    }
+
+    .image-exo{
+        position: relative;
+        top: -17%;
+        left: 55%;
+    }
+
+    .image-exo2{
+        position: relative;
+        top: -22%;
+        left: 8%;
+    }
+
+    #img-exo{
+        width: 250px;
+    }
+
+    
+}
+
+
+/* for smartphone */
+
+@media (max-width:700px){
+
+    p{
+        font-size: 14px;
+    }
+    .container-fluid .DYP{
+        position: relative;
+        top: 30%;
+    }
+
+    .MUN{
+        position: relative;
+        top: 42%;
+        height: 214%;
+    }
+
+    #MUN-image{
+        max-width:100%;
+    }
+
+    .MUN .MUN-img{
+        position: relative;
+        top: -32%;
+    }
+
+    .MUN .MUN-text{
+        position: relative;
+        top: 35%;
+    }
+
+    .prepare-sec .prepare-container {
+        position: relative;
+        top: 45%;
+    }
+    .mission-text{
+        top: 50%;
+    }
+
+
+    @media (max-width:400px){
+        .position-paper{
+            height: 231%;
+            top: -24%;
+        }
+    }
+
+    @media (min-width:400px){
+        .position-paper{
+            height: 200%;
+            top: -24%;
+        }
+    }
+
+    .position-para{
+        top: 14%;
+    }
+
+    .position-points{
+        top: 13%;
+    }
+
+    .openSpeech-and-Research-sec{
+        height: 185%;
+    }
+
+    .image-exo2{
+        display: none;
+    }
+
+    #img-exo{
+        width: 250px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:1080px) and (min-width:900px){
+
+    .container-fluid .DYP{
+        top: 30%;
+        left: 16%;
+    }
+
+    #MUN-image{
+        max-width:700px;
+    }
+
+    .MUN .MUN-text{
+        position: relative;
+        top: 34%;
+        left: -18%;
+    }
+
+    .MUN-img{
+        top: -50%;
+        left: 20%;
+    }
+
+    .mission-text{
+        left: -13%;
+        top: 70%;
+
+    }
+
+    .position-para{
+        left: 25%;    
+        
+        top: 24%;
+    }
+
+    .position-points{
+        left: 14%;
+        top: 25%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .position-paper{
+        top: 34%;
+        height: 205%;
+    }
+
+    .openSpeech-and-Research-sec{
+        height: 140%;
+    }
+
+    .opening{
+        left: -11%;
+    }
+
+    .research{
+        left: 10%;
+    }
+
+    .resolution-and-profile-sec .resolution{
+        position: relative;
+        top: 4%;
+        left: -15%;
+    }
+
+    
+
+    .resolution-and-profile-sec .country-profile{
+        position: relative;
+        left: 8%;
+        top: -20%;
+    }
+
+    .image-exo{
+        position: relative;
+        top: -17%;
+        left: 60%;
+    }
+
+    .image-exo2{
+        position: relative;
+        top: -22%;
+        left: 8%;
+    }
+
+    #img-exo{
+        width: 250px;
+    }
+}
+
+@media (max-width:900px) and (min-width:700px){
+
+    .container-fluid .DYP{
+        top: 30%;
+        left: 10%;
+    }
+
+    #MUN-image{
+        max-width:700px;
+    }
+
+    .MUN .MUN-text{
+        position: relative;
+        top: 34%;
+        left: -7%;
+    }
+
+    .MUN{
+        height: 113;
+    }
+
+    .MUN-img{
+        top: -50%;
+        left: 6%;
+    }
+
+    .mission-text{
+        left: -13%;
+        top: 70%;
+
+    }
+
+    .position-para{
+        left: 15%;    
+        
+        top: 24%;
+    }
+
+    .position-points{
+        top: 25%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .position-paper{
+        top: 34%;
+        height: 205%;
+    }
+
+    .openSpeech-and-Research-sec{
+        height: 125%;
+    }
+
+    .opening{
+        left: -2%;
+    }
+
+    .research{
+        left: 3%;
+    }
+
+    .resolution-and-profile-sec .resolution{
+        position: relative;
+        top: 4%;
+        left: -15%;
+    }
+
+    
+
+    .resolution-and-profile-sec .country-profile{
+        position: relative;
+        left: 8%;
+        top: -20%;
+    }
+
+    .image-exo{
+        position: relative;
+        top: -17%;
+        left: 65%;
+    }
+
+    .image-exo2{
+        position: relative;
+        top: -22%;
+        left: 8%;
+    }
+
+    #img-exo{
+        width: 250px;
+    }
+}
+

@@ -6,17 +6,20 @@
     box-sizing: border-box;
 }
 
-html, body, .front-page{
+html, body{
     height: 100%;
 }
+
+.front-page{
+    height: 102%;
+}
+
 
 @media (max-width:750px){
     #mobile{
         display: flex;
     }
-    #pc{
-        display: none;
-    }
+    
     .text-box h1 {
         font-size: 41px;
         text-align: end;
@@ -34,23 +37,15 @@ html, body, .front-page{
         
     }
 
+    
+
 
 }
 @media (min-width:751px){
     #mobile{
         display: none;
     }
-    #pc{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed; 
-        top: -80px;
-        width: 100%; 
-        z-index: 1;
-        transition: top 0.3s;
-        background: white;
-    }
+    
     .text-box h1 {
         font-size: 62px;
         text-align: center;
@@ -66,8 +61,19 @@ html, body, .front-page{
     }
 }
 
+#pc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed; 
+        top: -80px;
+        width: 100%; 
+        z-index: 1;
+        transition: top 0.3s;
+        background: white;
+    }
+
 .header{
-    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -223,12 +229,49 @@ html, body, .front-page{
     background: #333;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transform: rotateY(180deg);
+    transform: rotatex(180deg) ;
+    
     border-radius: 4px
 }
 
-.container .box:hover .card-body{
-    transform: rotateY(180deg);
+.container .box .card-body .top-left, .container .box:hover .top-left{ 
+    transform: rotatex(-180deg) rotatez(90deg) ;
+}
+
+
+.container .box .card-body .top-mid, 
+.container .box:hover .top-mid, 
+.container .box .card-body .mid-mid, 
+.container .box:hover .mid-mid{
+    transform: rotatex(-180deg) ;
+}
+
+.container .box .card-body .top-right, .container .box:hover .top-right{
+    transform: rotatex(-180deg) rotatez(-90deg) ;
+}
+
+
+.container .box .card-body .mid-left, .container .box:hover .mid-left{
+    transform: rotatey(180deg) ;
+}
+
+.container .box .card-body .mid-right, .container .box:hover .mid-right{
+    transform: rotatey(-180deg) ;
+}
+
+.container .box .card-body .low-left, .container .box:hover .low-left{ 
+    transform: rotatex(180deg) rotatez(-90deg) ;
+}
+
+.container .box .card-body .low-mid, 
+.container .box:hover .low-mid, 
+.container .box .card-body .low-low, 
+.container .box:hover .low-low{
+    transform: rotatex(180deg) ;
+}
+
+.container .box .card-body .low-right, .container .box:hover .low-right{
+    transform: rotatex(180deg) rotatez(90deg) ;
 }
 
 .container .box .card-body .content div{
@@ -241,6 +284,10 @@ html, body, .front-page{
 
 .container .box .card-body .content div h3{
     letter-spacing: 1px;
+}
+
+.card-para{
+    font-size: 10px;
 }
 
 .handles{

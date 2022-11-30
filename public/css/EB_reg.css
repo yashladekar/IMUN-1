@@ -1,0 +1,22 @@
+@media (max-width:900px){
+    #table{
+        overflow: scroll;
+    }
+   
+}
+
+@media (min-width:901px){
+    #table{
+    overflow: hidden;
+}
+}
+
+.coun-prefer{
+    max-width: 450px;
+    width: 90%;
+}
+
+table{
+    font-size: 15px;
+    text-align: center;
+}
