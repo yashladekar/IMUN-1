@@ -16,10 +16,7 @@ html, body{
 
 
 @media (max-width:750px){
-    #mobile{
-        display: flex;
-    }
-    
+
     .text-box h1 {
         font-size: 41px;
         text-align: end;
@@ -28,96 +25,44 @@ html, body{
         text-align: end;
     }
 
-    .handles{
-        width: 80%;
-    }
-    .footer-links{
-        width: 80%;
-        flex-direction: column;
-        
+    .committees-heading{
+        font-size: 30px;
+        margin: 10px;;
     }
 
-    
+    .container .box{
+        width: 200px;
+        height: 200px;
+    }
 
+    .container .box .card-body .content div{
+        padding: 10px;
+    }
 
 }
 @media (min-width:751px){
-    #mobile{
-        display: none;
-    }
     
     .text-box h1 {
         font-size: 62px;
         text-align: center;
     }
 
-    .handles{
-        width: 30%;
+
+    .committees-heading{
+        font-size: 50px;
+        margin: 30px 10px 20px 80px;
     }
 
-    .footer-links{
-        width: 30%;
-        flex-direction: row;
+    .container .box{
+        width: 300px;
+        height: 300px;
+    }
+
+    .container .box .card-body .content div{
+        padding: 20px;
     }
 }
 
-#pc{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed; 
-        top: -80px;
-        width: 100%; 
-        z-index: 1;
-        transition: top 0.3s;
-        background: white;
-    }
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav{
-    padding-right: 25px;
-}
-
-.nav-item{
-    padding: 20px;
-}
-
-.offcanvas-body{
-    background-color: #333331;
-}
-
-.nav-item a {
-    color: rgb(98 1 129);
-    text-decoration: aliceblue;
-    font-family: monospace;
-    font-size: 18px;
-    display: inline-block;
-    position: relative;
-    padding: 0;
-}
-
-.nav-item a::after {
-    content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color:rgb(0, 0, 194) ;
-  transform-origin: center;
-  transition: transform 0.25s ease-out;
-}
-
-.nav-item a:hover::after {
-  transform: scaleX(1);
-  transform-origin: center;
-}
 
 .bg-overlay {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../logo/WhatsApp\ Image\ 2022-11-12\ at\ 20.34.03.jpeg");
@@ -176,6 +121,10 @@ html, body{
     transition: 0.2s;
 }
 
+.head-layout{
+    text-transform: uppercase;
+    color: rgb(0, 90, 139);
+}
 
 .card-section{
     transform-style: preserve-3d;
@@ -187,8 +136,6 @@ html, body{
 
 .container .box{
     position: relative;
-    width: 300px;
-    height: 300px;
     margin: 20px;
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -217,7 +164,7 @@ html, body{
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 50px;
     background-color: black;
     border-radius: 4px
 }
@@ -276,8 +223,7 @@ html, body{
 
 .container .box .card-body .content div{
     transform-style: preserve-3d;
-    padding: 20px;
-    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    background: linear-gradient(45deg, #0654a6,#02ccc6);
     transform: translateZ(100px);
     border-radius: 5px
 }
@@ -290,55 +236,6 @@ html, body{
     font-size: 10px;
 }
 
-.handles{
-    color: darkslategrey;
-}
-
-.about-Us {
-    background: rgba(121, 131, 130, 0.576);
-    width: 100%;
-    position: absolute;
-    height: 45vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-Us a{
-    text-decoration: none;
-    color: darkslategrey;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.about-Us a:hover{
-        color: #8a135e;
-}
-
-
-.social-media{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.bi{
-    font-size: 40px;
-}
-
-.footer-links{
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-links a:hover{
-    text-decoration: underline;
-}
-
-.copyright{
-    position: relative;
-    top: 4%;
-    height: 25px;
-    width: 100%;
-    text-align: center;
+section{
+    margin: 20px 0 20px 0;
 }

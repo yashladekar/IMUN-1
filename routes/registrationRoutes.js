@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router();
-const ejs = require('ejs');
 const { google } = require('googleapis');
 const { assuredworkloads } = require("googleapis/build/src/apis/assuredworkloads")
 const nodemailer = require("nodemailer");
@@ -15,7 +14,7 @@ router.post('/', async (req, res) => {
         country_preference1, country_preference2, country_preference3, suggestion, past_del, past_exec, past_ps, cod_past_del, cod_past_exec, cod_past_ps } = req.body;
 
     var Gender, codGender;
-    let uniqueId = (new Date()).getTime();
+    let uniqueId = (new Date()).getTime() + 10;
     if (gender[0] === "other") {
         Gender = gender[1];
     }
@@ -63,15 +62,15 @@ router.post('/', async (req, res) => {
     const mailConfigurations = {
         from: 'dyppunemun@gmail.com',
         to: email,
-        subject: 'confirmation of registration ',
-        text: 'thank you for the registration ' + fname + ' ' + lname
-            + ' this is your unique id ' + uniqueId + '.'
+        subject: 'Delegate confirmation',
+        text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPMUN as a Delegate. Your Delegate ID number is " + uniqueId + " authorized by organization committee of DYPMUN for session 2023.\n Congratulations " + fname + " " + lname + " you're a Delegate now .\n Further details regarding delegation will be shared soon.You can contact  committee members regarding any queries. \n Thank you \n ~regards"
     };
 
     transporter.sendMail(mailConfigurations, function (error, info) {
-        if (error) throw Error(error);
+        if (error)  res.redirect('404');
         console.log('Email Sent Successfully');
         console.log(info);
+        
     });
 
     res.redirect("thankyou")

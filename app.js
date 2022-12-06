@@ -31,6 +31,10 @@ app.get('/thankyou', function (req, res) {
     res.render('thankyou');
 });
 
+app.get('/404',(req,res)=>{
+    res.render('404')
+})
+
 app.get('/founders', (req, res) => {
     res.render('founders');
 })
@@ -42,6 +46,11 @@ app.get('/team', (req, res) => {
     res.render('404');
 })
 
+app.get('/preparation', (req, res) => {
+    res.render('preparation')
+})
+
+
 app.listen(port, () => {
     console.log("http://localhost:4000")
-}) 
+})  

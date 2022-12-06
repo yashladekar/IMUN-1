@@ -14,7 +14,6 @@ body {
 }
 
 .front-page{
-    height: 100vh;
     width: 100%;
 }
 .bg-overlay {
@@ -31,7 +30,6 @@ body {
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 25%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -187,13 +185,7 @@ body {
     }
 }
 
-.qoute{
-    position: relative;
-    top: 50%;
-    border: solid 10px;
-    font-size: 1.2rem;
-    max-width: 500px;
-}
+
 
 /* for desktop */
 
@@ -213,7 +205,13 @@ body {
         font-size: 4rem;
     }
 
-    
+    .front-page{
+        height: 100vh;
+    }
+
+    .head-box{
+        top: 25%;
+    }
 
     .committees{
         padding-bottom: 50px;
@@ -260,9 +258,14 @@ body {
         height: 220px;
     }
 
-    .qoute{
-        left: 55%;
-        padding: 25px;
+    .comm-detail{
+        left: 48%;
+        padding: 20px;     
+        position: relative;
+        top: 38%;
+        border: solid 10px;
+        font-size: 1rem;
+        max-width: 600px;
     }
     
 }
@@ -276,6 +279,11 @@ body {
         width:100px;
     }
    
+
+    .front-page{
+        height: 110vh;
+    }
+
     .logo-box{
         width: 120px;
         height: 120px;
@@ -289,6 +297,17 @@ body {
         font-size: 2rem;
     }
 
-    
+    .head-box{
+        top: 12%;
+    }
+
+    .comm-detail {
+        position: relative;
+        top: 20%;
+        border: solid 5px;
+        font-size: .8rem;
+        max-width: 600px;
+        padding: 8px;
+    }
     
 }

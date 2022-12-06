@@ -56,8 +56,6 @@ body{
     width: 100%;
     height: 100%;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 form{
@@ -65,7 +63,7 @@ form{
     flex-direction: column;
     background-color: white;
     border-radius: 5px;
-    margin: 50px;
+    margin: 50px auto;
 }
 
 .inputs, .date-of-birth, .cod-date-of-birth, .diet, .cod-diet, .accomodation, .cod-accomodation,
@@ -159,4 +157,8 @@ input[type=checkbox]:focus{
     width: 150px;
     align-self: end;
     margin: 20px;
+}
+
+.accordion{
+    z-index: 0;
 }

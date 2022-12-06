@@ -12,13 +12,17 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+let email = "yashladekar001@gmail.com"
+let fname = 'yash'
+let lname = "ladekar"
+let uniqueId = "12345"
 
 const mailConfigurations = {
     from: 'dyppunemun@gmail.com',
-    to: 'gunjan.binjola211@gmail.com',
-    subject: 'Sending Email using Node.js',
-    text: 'Hi! There, You know I am using the NodeJS '
-        + 'Code along with NodeMailer to send this email.'
+    to: email,
+    subject: 'executive board confirmation mail',
+    text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPMUN as an Executive board member. \n Your Executive ID number is " + uniqueId + "  authorized by the organizing committee of DYPMUN for session 2023. \n " + fname + " " + lname + " you're an executive board member now. \n " + "Further details regarding the event will be shared soon.You can contact committee members regarding any queries." + "\n Thankyou\n ~regards"
+
 };
 
 transporter.sendMail(mailConfigurations, function (error, info) {
