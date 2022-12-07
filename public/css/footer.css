@@ -43,6 +43,11 @@
     align-items: center;
 }
 
+.footer-links a{
+    text-decoration: none;
+    color: rgb(106, 0, 72);
+}
+
 .follow-us-header{
     font-size: 2.25rem;
 }

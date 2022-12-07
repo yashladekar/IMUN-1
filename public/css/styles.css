@@ -38,7 +38,9 @@ html, body{
     .container .box .card-body .content div{
         padding: 10px;
     }
-
+    .head-layout{
+        font-size: 30px;
+    }
 }
 @media (min-width:751px){
     
@@ -60,6 +62,10 @@ html, body{
 
     .container .box .card-body .content div{
         padding: 20px;
+    }
+
+    .head-layout{
+        font-size: 50px;
     }
 }
 
