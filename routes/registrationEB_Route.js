@@ -24,6 +24,7 @@ router.post('/', async (req, res) => {
     const googleSheets = google.sheets({ version: "v4", auth: client });
     const spreadsheetId = process.env.spreadsheetId_env
 
+    
     await googleSheets.spreadsheets.values.append({
         auth,
         spreadsheetId,
@@ -31,7 +32,7 @@ router.post('/', async (req, res) => {
         valueInputOption: "USER_ENTERED",
         resource: {
             values: [
-                [uniqueId, fname, lname, email, phone, dob, genderEB, institution, city_of_residence, nationality, diet, accomodation, comm_preference1, comm_preference2, comm_preference3, country_preference1, country_preference2, country_preference3, suggestion, past_dele, past_exec, past_ps],
+                [uniqueId, fname, lname, email, phone, dob, genderEB, city_of_residence, nationality, diet, accomodation, comm_preference1, comm_preference2, comm_preference3, country_preference1, country_preference2, country_preference3, suggestion, past_dele, past_exec, past_ps],
 
             ]
         }
@@ -47,7 +48,7 @@ router.post('/', async (req, res) => {
         from: 'dyppunemun@gmail.com',
         to: email,
         subject: 'Executive board confirmation mail',
-        text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPMUN as an Executive board member. \n Your Executive ID number is " + uniqueId + "  authorized by the organizing committee of DYPMUN for session 2023. \n " + fname + " " + lname + " you're an executive board member now. \n " + "Further details regarding the event will be shared soon.You can contact committee members regarding any queries." + "\n Thankyou\n ~regards"
+        text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPIMUN as an Executive board member. \n Your Executive ID number is " + uniqueId + "  authorized by the organizing committee of DYPIMUN for session 2023. \n " + fname + " " + lname + " you're an executive board member now. \n " + "Further details regarding the event will be shared soon.You can contact committee members regarding any queries." + "\n Thankyou\n ~regards \n Meghna Desai +91 7385083351 \n Areeb Ansari - +91 9423338493 \n Mail - dypmun2k23@gmail.com"
     };
 
     transporter.sendMail(mailConfigurations, function (error, info) {

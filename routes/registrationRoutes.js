@@ -63,7 +63,7 @@ router.post('/', async (req, res) => {
         from: 'dyppunemun@gmail.com',
         to: email,
         subject: 'Delegate confirmation',
-        text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPMUN as a Delegate. Your Delegate ID number is " + uniqueId + " authorized by organization committee of DYPMUN for session 2023.\n Congratulations " + fname + " " + lname + " you're a Delegate now .\n Further details regarding delegation will be shared soon.You can contact  committee members regarding any queries. \n Thank you \n ~regards"
+        text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPIMUN as a Delegate. Your Delegate ID number is " + uniqueId + " authorized by organization committee of DYPIMUN for session 2023.\n Congratulations " + fname + " " + lname + " you're a Delegate now .\n Further details regarding delegation will be shared soon.You can contact  committee members regarding any queries. \n Thank you \n ~regards \n Meghna Desai +91 7385083351 \n Areeb Ansari - +91 9423338493 \n Mail - dypmun2k23@gmail.com"
     };
 
     transporter.sendMail(mailConfigurations, function (error, info) {

@@ -44,7 +44,7 @@
     max-width: 520px;
     min-height: 323px;
     height: auto;
-    background: black;
+    background: #2f2f2f;
     color: aliceblue;
     z-index: 1;
 }
