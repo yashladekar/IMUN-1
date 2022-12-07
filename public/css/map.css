@@ -74,13 +74,20 @@
         min-height: 960px;
     }
 
+    #email-contact{
+        letter-spacing: 0;
+        overflow-wrap: break-word;
+    }
+
     @media (max-width:400px){
 
         .address-para{
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             margin: 31px 0 0;
             font-size: 0.7rem;
         }
+
+        
         .address-layout-inner{
             padding: 10px;
             justify-content: center;
