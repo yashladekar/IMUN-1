@@ -54,7 +54,7 @@ router.post('/', async (req, res) => {
         if (error) throw Error(error);
         console.log('Email Sent Successfully');
         console.log(info);
-        res.redirect('404')
+        // res.redirect('404')
     });
 
     res.redirect("thankyou")

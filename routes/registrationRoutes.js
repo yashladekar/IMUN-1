@@ -67,10 +67,9 @@ router.post('/', async (req, res) => {
     };
 
     transporter.sendMail(mailConfigurations, function (error, info) {
-        if (error)  res.redirect('404');
+        if (error) throw Error(error);
         console.log('Email Sent Successfully');
         console.log(info);
-        
     });
 
     res.redirect("thankyou")
