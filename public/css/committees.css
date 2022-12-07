@@ -267,6 +267,16 @@ body {
         font-size: 1.1rem;
         max-width: 600px;
     }
+
+    #specpol .committees .container .text-container .text-box{
+        padding: 10px;
+    }
+
+    #specpol .committees .container .text-container{
+        width: 410px;
+        max-height: 460px;
+        margin: 40px 50px 0;
+    }
     
 }
 
@@ -319,12 +329,3 @@ body {
     justify-content: space-between;
 }
 
-#specpol .committees .container .text-container .text-box{
-    padding: 10px;
-}
-
-#specpol .committees .container .text-container{
-    width: 410px;
-    max-height: 460px;
-    margin: 40px 50px 0;
-}
