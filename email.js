@@ -21,7 +21,7 @@ const mailConfigurations = {
     from: 'dyppunemun@gmail.com',
     to: email,
     subject: 'executive board confirmation mail',
-    text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPMUN as an Executive board member. \n Your Executive ID number is " + uniqueId + "  authorized by the organizing committee of DYPMUN for session 2023. \n " + fname + " " + lname + " you're an executive board member now. \n " + "Further details regarding the event will be shared soon.You can contact committee members regarding any queries." + "\n Thankyou\n ~regards"
+    text: "Dear " + fname + " " + lname + "\n" + "This is confirmation of your participation in DYPIMUN as a Delegate. Your Delegate ID number is " + uniqueId + " authorized by organization committee of DYPMUN for session 2023.\n Congratulations " + fname + " " + lname + " you're a Delegate now .\n Further details regarding delegation will be shared soon.You can contact  committee members regarding any queries. \n Thank you \n ~regards \n Meghna Desai +91 7385083351 \n Areeb Ansari - +91 9423338493 \n Mail - dypmun2k23@gmail.com"
 
 };
 
