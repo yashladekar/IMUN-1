@@ -58,7 +58,7 @@ router.post('/', async (req, res) => {
         // res.redirect('404')
     });
 
-    res.redirect("thankyou")
+    res.redirect("index")
 
 })
 

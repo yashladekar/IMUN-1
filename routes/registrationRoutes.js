@@ -72,6 +72,6 @@ router.post('/', async (req, res) => {
         console.log(info);
     });
 
-    res.redirect("thankyou")
+    res.redirect("index")
 })
 module.exports = router;

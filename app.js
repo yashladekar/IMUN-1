@@ -27,9 +27,9 @@ app.use('/registration_for_EB', registerationEb_Routes);
 
 app.use('/commitee', commiteeRoutes);
 
-app.get('/thankyou', function (req, res) {
-    res.render('thankyou');
-});
+// app.get('/thankyou', function (req, res) {
+//     res.render('thankyou');
+// });
 
 app.get('/404',(req,res)=>{
     res.render('404')
@@ -53,4 +53,4 @@ app.get('/preparation', (req, res) => {
 
 app.listen(port, () => {
     console.log("http://localhost:4000")
-})  
+})
